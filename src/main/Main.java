@@ -2,11 +2,15 @@ package main;
 
 import java.util.Scanner;
 
+import Event.Event;
+
 public class Main {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		int num;
+		
+		Event ev = new Event();
 		
 		while(true) {
 			System.out.println("1.회원관리 이동");
@@ -18,6 +22,7 @@ public class Main {
 			case 1:
 				break;
 			case 2:
+				ev.event();
 				break;
 			}
 			
